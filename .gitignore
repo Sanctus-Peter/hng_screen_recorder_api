@@ -33,6 +33,3 @@ TEST*.xml
 Thumbs.db
 
 
-**/migrations/
-migrations/
-
