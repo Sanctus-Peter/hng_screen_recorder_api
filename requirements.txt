@@ -21,6 +21,7 @@ djangorestframework==3.14.0
 drf-spectacular==0.26.5
 freezegun==1.2.2
 frozenlist==1.4.0
+gunicorn
 idna==3.4
 inflection==0.5.1
 jmespath==1.0.1
