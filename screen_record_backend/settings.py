@@ -154,8 +154,8 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DEFAULT_FILE_STORAGE = 'core.azure_storage.AzureMediaStorage'
-STATICFILES_STORAGE = 'core.azure_storage.AzureStaticStorage'
+DEFAULT_FILE_STORAGE = 'video.azure_storage.AzureMediaStorage'
+STATICFILES_STORAGE = 'video.azure_storage.AzureStaticStorage'
 
 AZURE_ACCOUNT_NAME = os.getenv('AZURE_ACCOUNT_NAME', 'sanctus')
 AZURE_ACCOUNT_KEY = os.getenv('AZURE_ACCOUNT_KEY', 'sanctus')
