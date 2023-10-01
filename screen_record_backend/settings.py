@@ -154,18 +154,18 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-DEFAULT_FILE_STORAGE = 'video.azure_storage.AzureMediaStorage'
-STATICFILES_STORAGE = 'video.azure_storage.AzureStaticStorage'
+# DEFAULT_FILE_STORAGE = 'video.azure_storage.AzureMediaStorage'
+# STATICFILES_STORAGE = 'video.azure_storage.AzureStaticStorage'
 
-AZURE_ACCOUNT_NAME = os.getenv('AZURE_ACCOUNT_NAME', 'sanctus')
-AZURE_ACCOUNT_KEY = os.getenv('AZURE_ACCOUNT_KEY', 'sanctus')
-AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
+# AZURE_ACCOUNT_NAME = os.getenv('AZURE_ACCOUNT_NAME', 'sanctus')
+# AZURE_ACCOUNT_KEY = os.getenv('AZURE_ACCOUNT_KEY', 'sanctus')
+# AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
 
-STATIC_URL = f'https://{AZURE_CUSTOM_DOMAIN}/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
 
-MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/media/'
-MEDIA_ROOT = BASE_DIR / 'mediafiles'
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 RQ_QUEUES = {
     'default': {
