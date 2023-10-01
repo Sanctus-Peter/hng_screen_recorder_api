@@ -21,7 +21,7 @@ djangorestframework==3.14.0
 drf-spectacular==0.26.5
 freezegun==1.2.2
 frozenlist==1.4.0
-gunicorn
+gunicorn==21.2.0
 idna==3.4
 inflection==0.5.1
 jmespath==1.0.1
@@ -32,6 +32,7 @@ multidict==6.0.4
 numpy==1.26.0
 openai==0.28.1
 opencv-python-headless==4.8.1.78
+packaging==23.2
 prompt-toolkit==3.0.39
 psycopg2-binary==2.9.8
 python-dateutil==2.8.2
